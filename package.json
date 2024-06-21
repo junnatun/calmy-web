@@ -1,0 +1,17 @@
+{
+  "name": "calmy-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/base.css -o ./public/css/style.css --watch",
+    "prod": "npx tailwindcss -o ./public/css/build.css --minify",
+    "final": "npx tailwindcss build ./public/css/style.css -o ./public/css/build.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}

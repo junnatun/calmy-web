@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calmy | Chatbot</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
+</head>
+
+<body class="bg-primary bg-fixed">
+    <!-- Sidebar start -->
+    <navbar class="w-1/5 h-full flex flex-col p-4 items-center justify-between bg-primary fixed">
+
+        <div class="flex flex-col items-center w-full ">
+            <img src="/src/images/logo-calmy-1.svg" alt="" class="p-2 my-6" height="5%">
+            <a href="beranda.html" class="text-xl font p-4 my-1 rounded-full w-full text-center hover:bg-primaryLight">
+                <div class="flex flex-row items-center">
+                    <img src="/src/icons/home.svg" width="12%">
+                    <p class="text-white ml-4">Beranda</p>
+                </div>
+            </a>
+            <a href="landingchatbot.html"
+                class="text-xl font-bold p-4 my-1 rounded-full bg-pink w-full text-center hover:bg-primaryLight">
+                <div class="flex flex-row items-center">
+                    <img src="/src/icons/chatbot-active.svg" width="12%">
+                    <p class="text-black2 ml-4">Chatbot</p>
+                </div>
+            </a>
+            <a href="landinglessons.html"
+                class="text-xl font p-4 my-1 rounded-full w-full text-center hover:bg-primaryLight">
+                <div class="flex flex-row items-center">
+                    <img src="/src/icons/lessons.svg" width="12%">
+                    <p class="text-white ml-4">Edukasi</p>
+                </div>
+            </a>
+            <a href="activities.html"
+                class="text-xl font p-4 my-1 rounded-full w-full text-center hover:bg-primaryLight">
+                <div class="flex flex-row items-center">
+                    <img src="/src/icons/activities.svg" width="12%">
+                    <p class="text-white ml-4">Aktivitas</p>
+                </div>
+            </a>
+            <a href="dailyjournal.html"
+                class="text-xl font p-4 my-1 rounded-full w-full text-center hover:bg-primaryLight">
+                <div class="flex flex-row items-center">
+                    <img src="/src/icons/daily-journal.svg" width="12%">
+                    <p class="text-white ml-4">Catatan Harian</p>
+                </div>
+            </a>
+            <a href="dashboard.html"
+                class="text-xl font p-4 my-1 rounded-full w-full text-center hover:bg-primaryLight">
+                <div class="flex flex-row items-center">
+                    <img src="/src/icons/profile.svg" width="12%">
+                    <p class="text-white ml-4">Akun Saya</p>
+                </div>
+            </a>
+            <a href="dashboard.html"
+                class="text-xl font p-4 my-1 rounded-full w-full text-center hover:bg-primaryLight">
+                <div class="flex flex-row items-center">
+                    <img src="/src/icons/signout.svg" width="12%">
+                    <p class="text-white ml-4">Keluar</p>
+                </div>
+            </a>
+        </div>
+    </navbar>
+    <!-- Sidebar -->
+
+
+    <!-- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="CalmyBot" agent-id="e1eab5f8-4627-4566-9a35-014b4b4a2bf8"
+        language-code="id"></df-messenger> -->
+
+    <iframe class="flex flex-col ml-[20%] pb-6 w-3/5 h-full bg-white rounded-3xl z-20 fixed" allow="microphone;"
+        intent="WELCOME" chat-title="CalmyBot" agent-id="e1eab5f8-4627-4566-9a35-014b4b4a2bf8" language-code="id"
+        src="https://console.dialogflow.com/api-client/demo/embedded/e1eab5f8-4627-4566-9a35-014b4b4a2bf8"></iframe>
+
+
+    <!-- <section class="flex flex-col ml-[20%] w-3/5 h-full px-4 py-12 bg-white rounded-3xl z-20 fixed justify-end">
+        <div class="flex flex-row w-full justify-between">
+            <input type="text" id="chat" name="chat" placeholder="Ketikkan sesuatu..." value=""
+                class="bg-primary w-full px-6 py-4 mx-4 rounded-full text-left text-white" />
+            <a href="index.html" class="bg-primary rounded-full p-4 hover:bg-primaryLight"><img
+                    src="{{url('/icons/send.svg')}}" alt="" width="32px" height="32px "></a>
+        </div>
+    </section> -->
+    <div class="flex flex-row ml-[50%] w-1/2 h-full bg-main-bg justify-end fixed top-0 z-0">
+        <img src="/src/images/calmy-chatbot-ill.svg" alt="">
+
+    </div>
+</body>
+
+</html>
