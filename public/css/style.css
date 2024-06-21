@@ -680,6 +680,14 @@ html {
   top: 0px;
 }
 
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -2972,6 +2980,15 @@ html {
   }
 }
 
+.hover\:border-2:hover {
+  border-width: 2px;
+}
+
+.hover\:border-black:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(10 12 28 / var(--tw-border-opacity));
+}
+
 .hover\:bg-grey:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(124 127 154 / var(--tw-bg-opacity));
@@ -2991,8 +3008,22 @@ html {
   background-color: transparent;
 }
 
+.hover\:bg-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 73 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-pink:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 178 182 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:font-semibold:hover {
+  font-weight: 600;
 }
 
 .hover\:text-black:hover {
