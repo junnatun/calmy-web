@@ -21,6 +21,7 @@ module.exports = {
         bgDark: "#0000000D",
         pink: "#FEB2B6",
         pinkLight: "#FFC5C8",
+        pinkDark: "#FF979C",
 
       },
       backgroundImage: {
