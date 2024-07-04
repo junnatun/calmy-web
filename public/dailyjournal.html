@@ -78,25 +78,19 @@
         </div>
     </a>
 
-    <section class="flex flex-col ml-[20%] w-4/5 h-full px-16 py-12 items-center bg-main-bg rounded-l-3xl">
-        <div class="flex flex-col">
+    <section class="flex flex-col ml-[20%]  w-4/5 h-full px-16 py-12 items-center bg-main-bg rounded-l-3xl">
+        <div class="flex flex-col ">
             <img src="/src/images/header-daily-journal.svg" alt="" class="mb-10">
-            <a href="#" id="open-modal-view"
-                class="flex flex-col p-6 h-42 bg-white rounded-3xl text-xl text-left mb-6 mx-4 justify-between">
-                <p>9 Juni 2024</p>
-                <p class="text-3xl font-bold mt-4">D-Day</p>
-            </a>
-            <div class="flex flex-col p-6 h-42 bg-white rounded-3xl text-xl text-left mb-6 mx-4 justify-between">
-                <p>1 Juni 2024</p>
-                <p class="text-3xl font-bold mt-4">Hari-hari Bikin Stres</p>
-            </div>
-            <div class="flex flex-col p-6 h-42 bg-white rounded-3xl text-xl text-left mb-6 mx-4 justify-between">
-                <p>31 Mei 2024</p>
-                <p class="text-3xl font-bold mt-4">The Bad Day</p>
-            </div>
-            <div class="flex flex-col p-6 h-42 bg-white rounded-3xl text-xl text-left mb-6 mx-4 justify-between">
-                <p>10 Mei 2024</p>
-                <p class="text-3xl font-bold mt-4">:(</p>
+            <div id="journals-col" class="flex-col ">
+
+                <!-- <a href="#" id="open-modal-view"
+                    class="flex flex-col p-6 h-42 bg-white rounded-3xl text-xl text-left mb-6 mx-4 justify-between">
+                    <p>9 Juni 2024</p>
+                    <p class="text-3xl font-bold mt-4">D-Day</p>
+                </a> -->
+                <div class="w-full h-96 bg-main-bg">
+                </div>
+
             </div>
         </div>
     </section>
@@ -110,17 +104,17 @@
             <form action="#" class="w-full">
                 <div class="flex flex-col justify-between">
                     <h4 class="text-xl h-10">Judul</h4>
-                    <input type="text" class="bg-gray-200 w-full h-10 rounded-lg p-4 text-xl mb-4"
+                    <input id="title" type="text" class="bg-gray-200 w-full h-10 rounded-lg p-4 text-xl mb-4"
                         placeholder="Judul..."></input>
                 </div>
                 <div class="flex flex-col justify-between">
                     <h4 class="text-xl h-10">Ceritaku</h4>
-                    <textarea type="text" class="bg-gray-200 w-full h-24 rounded-lg p-4 text-xl mb-4"
+                    <textarea id="desc" type="text" class="bg-gray-200 w-full h-24 rounded-lg p-4 text-xl mb-4"
                         placeholder="Ceritaku hari ini..."></textarea>
                 </div>
             </form>
-            <a href="make-cooies.html"
-                class="px-10 py-3 bg-primary text-white w-fit rounded-full text-xl mt-6 mb-4 hover:bg-primaryDark">Simpan</a>
+            <button id="save"
+                class="px-10 py-3 bg-primary text-white w-fit rounded-full text-xl mt-6 mb-4 hover:bg-primaryDark">Simpan</button>
         </div>
     </div>
     <!-- MODAL ADD JOURNAL END-->
@@ -172,6 +166,7 @@
 
     <!-- Import your main script -->
     <script type="module" src="../services/auth_status.js"></script>
+    <script type="module" src="../services/daily_journal.js"></script>
     <script type="module" src="../services/signout.js"></script>
 </body>
 
