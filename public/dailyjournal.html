@@ -25,7 +25,7 @@
                 class="text-xl font p-4 my-1 rounded-full w-full text-center hover:bg-primaryDark">
                 <div class="flex flex-row items-center">
                     <img src="/src/icons/chatbot.svg" width="12%">
-                    <p class="text-white ml-4">Chatbot</p>
+                    <p class="text-white ml-4">Voice Chatbot</p>
                 </div>
             </a>
             <a href="landinglessons.html"
@@ -35,13 +35,13 @@
                     <p class="text-white ml-4">Edukasi</p>
                 </div>
             </a>
-            <a href="activities.html"
+            <!-- <a href="activities.html"
                 class="text-xl font p-4 my-1 rounded-full w-full text-center hover:bg-primaryDark">
                 <div class="flex flex-row items-center">
                     <img src="/src/icons/activities.svg" width="12%">
                     <p class="text-white ml-4">Aktivitas</p>
                 </div>
-            </a>
+            </a> -->
             <a href="dailyjournal.html"
                 class="text-xl font-bold p-4 my-1 rounded-full bg-pink w-full text-center hover:bg-pinkDark">
                 <div class="flex flex-row items-center">
@@ -49,12 +49,12 @@
                     <p class="text-black2 ml-4">Catatan Harian</p>
                 </div>
             </a>
-            <a href="dashboard.html" class="text-xl font p-4 my-1 rounded-full w-full text-center hover:bg-primaryDark">
+            <!-- <a href="dashboard.html" class="text-xl font p-4 my-1 rounded-full w-full text-center hover:bg-primaryDark">
                 <div class="flex flex-row items-center">
                     <img src="/src/icons/profile.svg" width="12%">
                     <p class="text-white ml-4">Akun Saya</p>
                 </div>
-            </a>
+            </a> -->
             <a href="dashboard.html" class="text-xl font p-4 my-1 rounded-full w-full text-center hover:bg-primaryDark">
                 <div class="flex flex-row items-center">
                     <img src="/src/icons/signout.svg" width="12%">
@@ -66,13 +66,13 @@
     <!-- Sidebar -->
 
     <!-- FLOATING BUTTON ADD -->
-    <button id="open-modal-add-question"
+    <a href="" id="open-modal-add-journal"
         class="fixed bottom-8 right-6 p-4 rounded-full bg-primary hover:bg-primaryDark">
         <div class="flex flex-row items-center justify-between">
             <img src="/src/icons/plus.svg" alt="" width="10%">
             <p class="text-white text-xl">Tambah catatan</p>
         </div>
-    </button>
+    </a>
 
     <section class="flex flex-col ml-[20%] w-4/5 h-full px-16 py-12 items-center bg-main-bg rounded-l-3xl">
         <div class="flex flex-col">
@@ -115,6 +115,47 @@
             </div>
         </div>
     </section>
+
+    <!-- MODAL ADD JOURNAL-->
+    <div class="fixed hidden inset-0 bg-black bg-opacity-50 overflow-y-auto h-screen w-screen" id="modal-add-journal">
+        <!--modal content-->
+        <div class="w-2/5 h-fit bg-white mx-auto my-20 rounded-2xl p-8 flex flex-col items-center">
+            <h1 class="text-4xl font-extrabold text-center">Make A Cooies</h1>
+            <p class="text-xl pt-4 pb-8">Buat kuis dengan memasukkan nama kuis dan deskripsinya</p>
+            <form action="#" class="w-full">
+                <div class="flex flex-col justify-between">
+                    <h4 class="text-xl h-10">Title</h4>
+                    <input type="text" class="bg-primaryLight w-full h-10 rounded-lg p-4 text-xl mb-4"
+                        placeholder="Cooies Title..."></input>
+                </div>
+                <div class="flex flex-col justify-between">
+                    <h4 class="text-xl h-10">Description</h4>
+                    <textarea type="text" class="bg-primaryLight w-full h-24 rounded-lg p-4 text-xl mb-4"
+                        placeholder="Cooies Description..."></textarea>
+                </div>
+            </form>
+            <a href="make-cooies.html"
+                class="px-10 py-3 bg-black text-white w-fit rounded-full text-xl mt-6 mb-4 hover:bg-primaryLight hover:text-black hover:font-semibold">Make</a>
+        </div>
+    </div>
+    <!-- MODAL ADD JOURNAL END-->
+    <script>
+        // MODAL ADD JOURNAL
+        let modalAddJournal = document.getElementById("modal-add-journal");
+        let openModalAddJournal = document.getElementById("open-modal-add-journal");
+
+        openModalAddJournal.onclick = function () {
+            modalAddJournal.style.display = "block";
+        }
+
+        // CLOSE MODAL
+        window.onclick = function (event) {
+            if (event.target == modalAddJournal) {
+                modalAddJournal.style.display = "none";
+            }
+        }
+
+    </script>
 </body>
 
 </html>
