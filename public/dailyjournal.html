@@ -66,7 +66,7 @@
     <!-- Sidebar -->
 
     <!-- FLOATING BUTTON ADD -->
-    <a href="" id="open-modal-add-journal"
+    <a href="#" id="open-modal-add-journal"
         class="fixed bottom-8 right-6 p-4 rounded-full bg-primary hover:bg-primaryDark">
         <div class="flex flex-row items-center justify-between">
             <img src="/src/icons/plus.svg" alt="" width="10%">
@@ -77,41 +77,22 @@
     <section class="flex flex-col ml-[20%] w-4/5 h-full px-16 py-12 items-center bg-main-bg rounded-l-3xl">
         <div class="flex flex-col">
             <img src="/src/images/header-daily-journal.svg" alt="" class="mb-10">
+            <a href="#" id="open-modal-view"
+                class="flex flex-col p-6 h-42 bg-white rounded-3xl text-xl text-left mb-6 mx-4 justify-between">
+                <p>9 Juni 2024</p>
+                <p class="text-3xl font-bold mt-4">D-Day</p>
+            </a>
             <div class="flex flex-col p-6 h-42 bg-white rounded-3xl text-xl text-left mb-6 mx-4 justify-between">
-                <p>31 Mei 2024</p>
-                <p class="text-3xl font-bold mt-4">My diary</p>
-                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nisi magnam
-                    pariatur...</p>
+                <p>1 Juni 2024</p>
+                <p class="text-3xl font-bold mt-4">Hari-hari Bikin Stres</p>
             </div>
             <div class="flex flex-col p-6 h-42 bg-white rounded-3xl text-xl text-left mb-6 mx-4 justify-between">
                 <p>31 Mei 2024</p>
-                <p class="text-3xl font-bold mt-4">My diary</p>
-                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nisi magnam
-                    pariatur...</p>
+                <p class="text-3xl font-bold mt-4">The Bad Day</p>
             </div>
             <div class="flex flex-col p-6 h-42 bg-white rounded-3xl text-xl text-left mb-6 mx-4 justify-between">
-                <p>31 Mei 2024</p>
-                <p class="text-3xl font-bold mt-4">My diary</p>
-                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nisi magnam
-                    pariatur...</p>
-            </div>
-            <div class="flex flex-col p-6 h-42 bg-white rounded-3xl text-xl text-left mb-6 mx-4 justify-between">
-                <p>31 Mei 2024</p>
-                <p class="text-3xl font-bold mt-4">My diary</p>
-                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nisi magnam
-                    pariatur...</p>
-            </div>
-            <div class="flex flex-col p-6 h-42 bg-white rounded-3xl text-xl text-left mb-6 mx-4 justify-between">
-                <p>31 Mei 2024</p>
-                <p class="text-3xl font-bold mt-4">My diary</p>
-                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nisi magnam
-                    pariatur...</p>
-            </div>
-            <div class="flex flex-col p-6 h-42 bg-white rounded-3xl text-xl text-left mb-6 mx-4 justify-between">
-                <p>31 Mei 2024</p>
-                <p class="text-3xl font-bold mt-4">My diary</p>
-                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nisi magnam
-                    pariatur...</p>
+                <p>10 Mei 2024</p>
+                <p class="text-3xl font-bold mt-4">:(</p>
             </div>
         </div>
     </section>
@@ -120,38 +101,66 @@
     <div class="fixed hidden inset-0 bg-black bg-opacity-50 overflow-y-auto h-screen w-screen" id="modal-add-journal">
         <!--modal content-->
         <div class="w-2/5 h-fit bg-white mx-auto my-20 rounded-2xl p-8 flex flex-col items-center">
-            <h1 class="text-4xl font-extrabold text-center">Make A Cooies</h1>
-            <p class="text-xl pt-4 pb-8">Buat kuis dengan memasukkan nama kuis dan deskripsinya</p>
+            <h1 class="text-4xl font-extrabold text-center">Catatan Harian</h1>
+            <p class="text-xl pt-4 pb-8">Bagaimana kabarmu hari ini?</p>
             <form action="#" class="w-full">
                 <div class="flex flex-col justify-between">
-                    <h4 class="text-xl h-10">Title</h4>
-                    <input type="text" class="bg-primaryLight w-full h-10 rounded-lg p-4 text-xl mb-4"
-                        placeholder="Cooies Title..."></input>
+                    <h4 class="text-xl h-10">Judul</h4>
+                    <input type="text" class="bg-gray-200 w-full h-10 rounded-lg p-4 text-xl mb-4"
+                        placeholder="Judul..."></input>
                 </div>
                 <div class="flex flex-col justify-between">
-                    <h4 class="text-xl h-10">Description</h4>
-                    <textarea type="text" class="bg-primaryLight w-full h-24 rounded-lg p-4 text-xl mb-4"
-                        placeholder="Cooies Description..."></textarea>
+                    <h4 class="text-xl h-10">Ceritaku</h4>
+                    <textarea type="text" class="bg-gray-200 w-full h-24 rounded-lg p-4 text-xl mb-4"
+                        placeholder="Ceritaku hari ini..."></textarea>
                 </div>
             </form>
             <a href="make-cooies.html"
-                class="px-10 py-3 bg-black text-white w-fit rounded-full text-xl mt-6 mb-4 hover:bg-primaryLight hover:text-black hover:font-semibold">Make</a>
+                class="px-10 py-3 bg-primary text-white w-fit rounded-full text-xl mt-6 mb-4 hover:bg-primaryDark">Simpan</a>
         </div>
     </div>
     <!-- MODAL ADD JOURNAL END-->
+
+    <!-- MODAL VIEW JOURNAL-->
+    <div class="fixed hidden inset-0 bg-black bg-opacity-50 overflow-y-auto h-screen w-screen" id="modal-view">
+        <!--modal content-->
+        <div class="w-2/5 h-fit bg-white mx-auto my-20 rounded-2xl p-8 flex flex-col">
+            <h1 class="text-4xl font-extrabold text-center">Catatan Harian</h1>
+            <p class="text-xl pt-4 pb-8">9 Juni 2024</p>
+            <p class="text-xl font-extrabold">D-Day</p>
+            <p class="text-xl">Hari ini aku ikut Babak Final Lomba Inovasi Digital Mahasiswa (LIDM) 2024.
+                Sayangnya aku belum juaraa huhu:(((( sedih banget rasanya. But, it's okay I'll be the winner later!</p>
+        </div>
+    </div>
+    <!-- MODAL VIEW JOURNAL END-->
+
     <script>
         // MODAL ADD JOURNAL
         let modalAddJournal = document.getElementById("modal-add-journal");
         let openModalAddJournal = document.getElementById("open-modal-add-journal");
+        // MODAL VIEW JOURNAL
+        let modalView = document.getElementById("modal-view");
+        let openModalView = document.getElementById("open-modal-view");
 
         openModalAddJournal.onclick = function () {
+            // modalAddJournal.classList.replace("hidden", "block");
             modalAddJournal.style.display = "block";
+
+        }
+
+        openModalView.onclick = function () {
+            modalView.style.display = "block";
         }
 
         // CLOSE MODAL
         window.onclick = function (event) {
             if (event.target == modalAddJournal) {
+                // modalAddJournal.classList.replace("block", "hidden");
                 modalAddJournal.style.display = "none";
+
+            }
+            if (event.target == modalView) {
+                modalView.style.display = "none";
             }
         }
 
