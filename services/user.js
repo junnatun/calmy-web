@@ -44,7 +44,7 @@ const getUserData = async () => {
 
     const titleElement = document.createElement('p');
     titleElement.className = "text-3xl font-bold mt-4";
-    titleElement.textContent = username;
+    titleElement.textContent = `Halo, ${username}`;
 
     
     // Add User Profile Components
