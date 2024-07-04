@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calmy | Platform Anxiety Disorder</title>
     <link rel="stylesheet" href="/public/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
+    <!-- <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" /> -->
+    <!-- Include SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Include SweetAlert JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
 </head>
 
 <body class="bg-main-bg bg-fixed">
@@ -24,7 +28,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="flex flex-row gap-12">
+            <div class="flex flex-row gap-4">
                 <!-- <ul class="flex flex-row gap-x-8 items-center">
                     <li class="text-lg text-primary font-bold">
                         <a href="index.html">Beranda</a>
@@ -39,9 +43,21 @@
                         <a href="about.html">Tentang</a>
                     </li>
                 </ul> -->
-                <a href="public/signin.html"
+                <!-- <button id="signout"
                     class="bg-primary px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-white font-poppins drop-shadow-lg Light hover:bg-transparent hover:text-black">
+                    Keluar
+                </button>
+                <button id="check-auth"
+                    class="bg-primary px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-white font-poppins drop-shadow-lg Light hover:bg-transparent hover:text-black">
+                    Check Auth
+                </button> -->
+                <a href="public/signin.html"
+                    class=" px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-primary font-poppins drop-shadow-lg Light hover:bg-transparent hover:text-black">
                     Masuk
+                </a>
+                <a href="public/signup.html"
+                    class="bg-primary px-12 border-2 border-primary py-2 mr-4 w-fit rounded-full text-base text-white font-poppins drop-shadow-lg Light hover:bg-transparent hover:text-black">
+                    Daftar
                 </a>
             </div>
         </nav>
@@ -238,6 +254,9 @@
             lastScrollTop = scrollTop;
         });
     </script>
+
+    <!-- Import your main script -->
+    <!-- <script type="module" src="../services/auth.js"></script> -->
 </body>
 
 </html>

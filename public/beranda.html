@@ -7,6 +7,10 @@
     <title>Calmy | Beranda</title>
     <link rel="stylesheet" href="/public/css/style.css" />
     <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
+    <!-- Include SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Include SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="bg-primary bg-fixed">
@@ -56,12 +60,12 @@
                     <p class="text-white ml-4">Akun Saya</p>
                 </div>
             </a> -->
-            <a href="dashboard.html" class="text-xl font p-4 my-1 rounded-full w-full text-center hover:bg-primaryDark">
+            <button id="signout" class="text-xl font p-4 my-1 rounded-full w-full text-center hover:bg-primaryDark">
                 <div class="flex flex-row items-center">
                     <img src="/src/icons/signout.svg" width="12%">
                     <p class="text-white ml-4">Keluar</p>
                 </div>
-            </a>
+            </button>
         </div>
     </navbar>
     <!-- Sidebar -->
@@ -166,6 +170,10 @@
             </div> -->
         </div>
     </section>
+
+    <!-- Import your main script -->
+    <script type="module" src="../services/auth_status.js"></script>
+    <script type="module" src="../services/signout.js"></script>
 </body>
 
 </html>

@@ -845,7 +845,6 @@ html {
 
 .mb-4 {
   margin-bottom: 1rem;
-
 }
 
 .mb-6 {
@@ -991,19 +990,20 @@ html {
   display: none;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-24 {
-  height: 6rem;
-
 .h-1 {
   height: 0.25rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-2 {
   height: 0.5rem;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .h-40 {
@@ -1055,8 +1055,8 @@ html {
   width: 66.666667%;
 }
 
-.w-3\/4 {
-  width: 75%;
+.w-2\/5 {
+  width: 40%;
 }
 
 .w-3\/4 {
@@ -1622,8 +1622,8 @@ html {
   justify-items: stretch;
 }
 
-.gap-12 {
-  gap: 3rem;
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-x-4 {
@@ -2138,6 +2138,11 @@ html {
   background-color: rgb(10 12 28 / var(--tw-bg-opacity));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .bg-pink {
   --tw-bg-opacity: 1;
   background-color: rgb(254 178 182 / var(--tw-bg-opacity));
@@ -2148,34 +2153,9 @@ html {
   background-color: rgb(67 73 255 / var(--tw-bg-opacity));
 }
 
-.bg-primaryLight {
-  --tw-bg-opacity: 1;
-  background-color: rgb(164 167 255 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-grey {
-  --tw-bg-opacity: 1;
-  background-color: rgb(124 127 154 / var(--tw-bg-opacity));
-}
-
-.bg-greyFont {
-  --tw-bg-opacity: 1;
-  background-color: rgb(118 124 167 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-5 {
@@ -2409,6 +2389,11 @@ html {
   padding-bottom: 1.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -2423,9 +2408,6 @@ html {
 
 .pl-6 {
   padding-left: 1.5rem;
-
-.pr-2 {
-  padding-right: 0.5rem;
 }
 
 .pt-10 {
@@ -2444,6 +2426,10 @@ html {
   padding-top: 6rem;
 }
 
+.pt-32 {
+  padding-top: 8rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -2452,10 +2438,6 @@ html {
   padding-top: 1.5rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
-}
-  
 .pt-8 {
   padding-top: 2rem;
 }
@@ -3134,10 +3116,6 @@ html {
 
 .hover\:font-bold:hover {
   font-weight: 700;
-}
-
-.hover\:font-semibold:hover {
-  font-weight: 600;
 }
 
 .hover\:text-black:hover {

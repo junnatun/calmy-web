@@ -7,6 +7,10 @@
     <title>Calmy | Masuk</title>
     <link rel="stylesheet" href="/public/css/style.css" />
     <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
+    <!-- Include SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Include SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="bg-main-bg bg-fixed">
@@ -31,9 +35,9 @@
                         class="bg-white px-24 py-4 rounded-lg text-center text-base" /><br />
                 </div>
                 <div class="flex flex-row items-center justify-center my-8">
-                    <a href="beranda.html" class="px-12 py-4 bg-primary rounded-full text-white hover:bg-primaryDark">
+                    <button id="signin" class="px-12 py-4 bg-primary rounded-full text-white hover:bg-primaryDark">
                         Masuk
-                    </a>
+                    </button>
                 </div>
             </form>
             <p class="text-base pb-10">
@@ -42,6 +46,9 @@
             </p>
         </div>
     </div>
+
+    <!-- Import your main script -->
+    <script type="module" src="../services/signin.js"></script>
 </body>
 
 </html>
