@@ -839,6 +839,11 @@ html {
   margin-bottom: 2rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -889,6 +894,10 @@ html {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .box-border {
@@ -1018,6 +1027,10 @@ html {
   height: 16rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .h-\[2px\] {
   height: 2px;
 }
@@ -1033,10 +1046,6 @@ html {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-96 {
-  height: 24rem;
 }
 
 .w-1\/2 {

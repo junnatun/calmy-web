@@ -36,7 +36,6 @@ const getUserData = async () => {
 
     // Get the username from the user document
     const username = userDoc.data().username;
-    console.log(username);
 
     const usernameContainer = document.getElementById('username');
 
@@ -47,10 +46,23 @@ const getUserData = async () => {
     titleElement.className = "text-3xl font-bold mt-4";
     titleElement.textContent = username;
 
+    
+    // Add User Profile Components
+    const profileContainer = document.getElementById('profile');
+    profileContainer.innerHTML = '';
+    
+    const usernameElement = document.createElement('p');
+    usernameElement.className = "font-bold text-2xl";
+    usernameElement.textContent = username;
+    
+    const emailElement = document.createElement('p');
+    emailElement.className = "text-grey";
+    emailElement.textContent = email;
+    
     usernameContainer.appendChild(titleElement);
+    profileContainer.appendChild(usernameElement);
+    profileContainer.appendChild(emailElement);
 }
 
 // Call the function when the document is fully loaded
-window.addEventListener('DOMContentLoaded', () => {
-    getUserData();
-});
+window.addEventListener('load', getUserData);
